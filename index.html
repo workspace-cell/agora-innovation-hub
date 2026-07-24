@@ -1,63 +1,430 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Vitrina digital de proyectos de Ágora Education">
-  <title>Ágora Innovation Hub</title>
-  <link rel="icon" href="./assets/logo-agora.png">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./app.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Delius&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
-  rel="stylesheet"
->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Ágora Innovation Hub: vitrina digital de proyectos creados por estudiantes de Ágora Education."
+  >
+
+  <meta
+    name="theme-color"
+    content="#8DAA25"
+  >
+
+  <title>Ágora Innovation Hub</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./assets/logo-agora.png"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Delius&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  >
+
+  <script
+    src="./app.js"
+    defer
+  ></script>
 </head>
+
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#inicio"><img src="./assets/logo-agora.png" alt="Ágora Education"><span><b>Ágora Innovation Hub</b><small>Ideas que transforman</small></span></a>
-    <nav><a href="#inicio">Inicio</a><a href="#proyectos">Proyectos</a><a href="#impacto">Impacto</a></nav>
-  </div>
-</header>
-<main>
-<section id="inicio" class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">ÁGORA THINKING · TECH & INNOVATION</span>
-      <h1>Ideas que nacen en el aula y <em>transforman nuestra comunidad.</em></h1>
-      <p>Explora proyectos creados por estudiantes de Ágora, prueba sus prototipos y apoya las soluciones que generan valor real.</p>
-      <a class="btn primary" href="#proyectos">Explorar proyectos</a>
+
+  <!-- =====================================================
+       ENCABEZADO
+       ===================================================== -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="#inicio"
+        aria-label="Ir al inicio de Ágora Innovation Hub"
+      >
+        <img
+          src="./assets/logo-agora.png"
+          alt="Logotipo de Ágora Education"
+        >
+
+        <div>
+          <strong>Ágora Innovation Hub</strong>
+          <span>La vitrina del talento Ágora</span>
+        </div>
+      </a>
+
+      <nav
+        class="main-nav"
+        aria-label="Navegación principal"
+      >
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#impacto">Impacto</a>
+      </nav>
+
     </div>
-    <aside class="hero-card"><div class="rocket">🚀</div><h2>Innovación con propósito</h2><p>Tecnología, creatividad, emprendimiento y soluciones conectadas con necesidades reales.</p></aside>
+  </header>
+
+  <main>
+
+    <!-- ===================================================
+         PORTADA
+         =================================================== -->
+
+    <section
+      id="inicio"
+      class="hero"
+    >
+      <div class="container hero-grid">
+
+        <div class="hero-copy-block">
+
+          <span class="eyebrow">
+            ÁGORA THINKING · TECH &amp; INNOVATION
+          </span>
+
+          <h1>
+            Ideas que nacen en el aula y
+            <span>transforman nuestra comunidad.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Explora proyectos creados por estudiantes de todas las
+            sedes de Ágora, prueba sus prototipos y apoya las soluciones
+            que generan valor real.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="btn btn-primary"
+              href="#proyectos"
+            >
+              Explorar proyectos
+            </a>
+
+            <a
+              class="btn btn-light"
+              href="#impacto"
+            >
+              Conocer el impacto
+            </a>
+
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+
+          <div class="hero-icon">
+            🚀
+          </div>
+
+          <h2>
+            Innovación con propósito
+          </h2>
+
+          <p>
+            Tecnología, creatividad, emprendimiento y soluciones
+            conectadas con necesidades reales de nuestra comunidad.
+          </p>
+
+          <div class="chips">
+            <span>💡 Creatividad</span>
+            <span>📱 Prototipos</span>
+            <span>🤝 Comunidad</span>
+            <span>🚀 Emprendimiento</span>
+          </div>
+
+          <a
+            class="btn btn-orange hero-support-link"
+            href="#proyectos"
+          >
+            ❤️ Apoya tu proyecto favorito
+          </a>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         ESTADÍSTICAS
+         =================================================== -->
+
+    <section
+      id="impacto"
+      class="stats-wrap"
+      aria-label="Impacto de la plataforma"
+    >
+      <div class="container stats">
+
+        <article>
+          <strong id="projects-count">0</strong>
+          <span>Proyectos publicados</span>
+        </article>
+
+        <article>
+          <strong id="campuses-count">0</strong>
+          <span>Sedes participantes</span>
+        </article>
+
+        <article>
+          <strong id="categories-count">0</strong>
+          <span>Categorías</span>
+        </article>
+
+        <article>
+          <strong id="students-count">0</strong>
+          <span>Estudiantes creadores</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         PROYECTOS
+         =================================================== -->
+
+    <section
+      id="proyectos"
+      class="projects-section"
+    >
+      <div class="container">
+
+        <div class="section-head">
+
+          <div>
+            <span class="eyebrow">
+              VITRINA DE TALENTO ÁGORA
+            </span>
+
+            <h2>
+              Explora nuestros proyectos
+            </h2>
+          </div>
+
+          <p>
+            Busca y filtra por sede, nivel, grado o categoría.
+            Conoce cada propuesta, prueba su prototipo y apoya
+            a tu equipo favorito.
+          </p>
+
+        </div>
+
+        <!-- FILTROS -->
+
+        <div
+          class="filters"
+          aria-label="Filtros de proyectos"
+        >
+
+          <label class="search-field">
+            <span>Buscar</span>
+
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Proyecto, categoría o descripción"
+              autocomplete="off"
+            >
+          </label>
+
+          <label>
+            <span>Sede</span>
+
+            <select id="campus-filter">
+              <option value="">
+                Todas
+              </option>
+            </select>
+          </label>
+
+          <label>
+            <span>Nivel</span>
+
+            <select id="level-filter">
+              <option value="">
+                Todos
+              </option>
+            </select>
+          </label>
+
+          <label>
+            <span>Grado</span>
+
+            <select id="grade-filter">
+              <option value="">
+                Todos
+              </option>
+            </select>
+          </label>
+
+          <label>
+            <span>Categoría</span>
+
+            <select id="category-filter">
+              <option value="">
+                Todas
+              </option>
+            </select>
+          </label>
+
+          <button
+            id="clear-filters"
+            class="clear-btn"
+            type="button"
+          >
+            Limpiar
+          </button>
+
+        </div>
+
+        <!-- ESTADO DE CARGA -->
+
+        <div
+          id="status-message"
+          class="status-message"
+        >
+          <div class="loader"></div>
+
+          <p>
+            Cargando proyectos desde Ágora Innovation Hub...
+          </p>
+        </div>
+
+        <!-- CONTENEDOR DE TARJETAS -->
+
+        <div
+          id="projects-grid"
+          class="projects-grid"
+          aria-live="polite"
+        ></div>
+
+        <!-- ESTADO VACÍO -->
+
+        <div
+          id="empty-state"
+          class="empty-state hidden"
+        >
+          <div>
+            🔎
+          </div>
+
+          <h3>
+            No encontramos proyectos
+          </h3>
+
+          <p>
+            Prueba con otra palabra o modifica los filtros.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       MODAL DE PROYECTO
+       ===================================================== -->
+
+  <div
+    id="project-modal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-project-title"
+  >
+
+    <div
+      class="modal-overlay"
+      data-close-modal
+    ></div>
+
+    <article class="modal-card">
+
+      <button
+        class="modal-close"
+        type="button"
+        aria-label="Cerrar ventana"
+        data-close-modal
+      >
+        ×
+      </button>
+
+      <div id="modal-body"></div>
+
+    </article>
   </div>
-</section>
-<section id="impacto" class="stats container">
-  <article><strong id="projects-count">0</strong><span>Proyectos</span></article>
-  <article><strong id="campuses-count">0</strong><span>Sedes</span></article>
-  <article><strong id="categories-count">0</strong><span>Categorías</span></article>
-  <article><strong id="students-count">0</strong><span>Estudiantes</span></article>
-</section>
-<section id="proyectos" class="projects container">
-  <div class="section-head"><div><span class="eyebrow">VITRINA DE TALENTO ÁGORA</span><h2>Explora nuestros proyectos</h2></div><p>Busca y filtra por sede, nivel, grado o categoría.</p></div>
-  <div class="filters">
-    <label class="search"><span>Buscar</span><input id="search-input" type="search" placeholder="Proyecto, categoría o descripción"></label>
-    <label><span>Sede</span><select id="campus-filter"><option value="">Todas</option></select></label>
-    <label><span>Nivel</span><select id="level-filter"><option value="">Todos</option></select></label>
-    <label><span>Grado</span><select id="grade-filter"><option value="">Todos</option></select></label>
-    <label><span>Categoría</span><select id="category-filter"><option value="">Todas</option></select></label>
-    <button id="clear-filters" class="clear">Limpiar</button>
-  </div>
-  <div id="status-message" class="status"><div class="loader"></div><p>Cargando proyectos...</p></div>
-  <div id="projects-grid" class="grid"></div>
-  <div id="empty-state" class="empty hidden"><div>🔎</div><h3>No encontramos proyectos</h3><p>Prueba con otros filtros.</p></div>
-</section>
-</main>
-<div id="project-modal" class="modal hidden"><div class="overlay" data-close-modal></div><article class="modal-card"><button class="close" data-close-modal>×</button><div id="modal-body"></div></article></div>
-<div id="toast" class="toast hidden"></div>
-<footer><div class="container footer"><div><b>Ágora Innovation Hub</b><p>La vitrina digital del talento y la innovación de Ágora Education.</p></div><p>Ágora Thinking · Tech & Innovation</p></div></footer>
+
+  <!-- =====================================================
+       MENSAJE EMERGENTE
+       ===================================================== -->
+
+  <div
+    id="toast"
+    class="toast hidden"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <!-- =====================================================
+       PIE DE PÁGINA
+       ===================================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <div>
+        <strong>
+          Ágora Innovation Hub
+        </strong>
+
+        <p>
+          La vitrina digital del talento y la innovación
+          de Ágora Education.
+        </p>
+      </div>
+
+      <div>
+        <p>
+          Ágora Thinking · Tech &amp; Innovation
+        </p>
+
+        <p>
+          Ideas que transforman nuestra comunidad.
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+
 </body>
 </html>
